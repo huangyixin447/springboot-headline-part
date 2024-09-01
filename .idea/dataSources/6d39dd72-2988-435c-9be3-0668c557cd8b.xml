@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.53">
     <root id="1"/>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -942,61 +942,61 @@
     <column id="297" parent="294" name="hid">
       <AutoIncrement>19</AutoIncrement>
       <Comment>头条id</Comment>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="298" parent="294" name="title">
       <Comment>头条标题</Comment>
-      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="299" parent="294" name="article">
       <Comment>头条新闻内容</Comment>
-      <DasType>varchar(5000)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(5000)|0s</StoredType>
     </column>
     <column id="300" parent="294" name="type">
       <Comment>头条类型id</Comment>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="301" parent="294" name="publisher">
       <Comment>头条发布用户id</Comment>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="302" parent="294" name="page_views">
       <Comment>头条浏览量</Comment>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="303" parent="294" name="create_time">
       <Comment>头条发布时间</Comment>
-      <DasType>datetime|0s</DasType>
       <Position>7</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="304" parent="294" name="update_time">
       <Comment>头条最后的修改时间</Comment>
-      <DasType>datetime|0s</DasType>
       <Position>8</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="305" parent="294" name="version">
       <Comment>乐观锁</Comment>
-      <DasType>int|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <Position>9</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="306" parent="294" name="is_deleted">
       <Comment>头条是否被删除 1 删除  0 未删除</Comment>
-      <DasType>int|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>10</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="307" parent="294" name="PRIMARY">
       <ColNames>hid</ColNames>
@@ -1011,27 +1011,27 @@
     <column id="309" parent="295" name="tid">
       <AutoIncrement>8</AutoIncrement>
       <Comment>新闻类型id</Comment>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="310" parent="295" name="tname">
       <Comment>新闻类型描述</Comment>
-      <DasType>varchar(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(10)|0s</StoredType>
     </column>
     <column id="311" parent="295" name="version">
       <Comment>乐观锁</Comment>
-      <DasType>int|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="312" parent="295" name="is_deleted">
       <Comment>头条是否被删除 1 删除  0 未删除</Comment>
-      <DasType>int|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="313" parent="295" name="PRIMARY">
       <ColNames>tid</ColNames>
@@ -1046,39 +1046,39 @@
     <column id="315" parent="296" name="uid">
       <AutoIncrement>9</AutoIncrement>
       <Comment>用户id</Comment>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="316" parent="296" name="username">
       <Comment>用户登录名</Comment>
-      <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <column id="317" parent="296" name="user_pwd">
       <Comment>用户登录密码密文</Comment>
-      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="318" parent="296" name="nick_name">
       <Comment>用户昵称</Comment>
-      <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <column id="319" parent="296" name="version">
       <Comment>乐观锁</Comment>
-      <DasType>int|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <Position>5</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="320" parent="296" name="is_deleted">
       <Comment>头条是否被删除 1 删除  0 未删除</Comment>
-      <DasType>int|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="321" parent="296" name="PRIMARY">
       <ColNames>uid</ColNames>
