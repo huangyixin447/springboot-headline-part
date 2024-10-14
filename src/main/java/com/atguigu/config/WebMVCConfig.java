@@ -20,6 +20,7 @@ public class WebMVCConfig  implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+//        用于添加token拦截器
         registry.addInterceptor(loginProtectedInterceptor).addPathPatterns("/headline/**");
     }
 }
